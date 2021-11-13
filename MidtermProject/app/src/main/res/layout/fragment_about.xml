@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/aboutConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdc700">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:fontFamily="serif"
+            android:text="      ABOUT US"
+            android:textColor="#0C0A0A"
+            android:textSize="15pt"
+            android:textStyle="bold"
+            android:background="#fffbbd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/eka"
+            android:layout_width="110dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/eka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about" />
+
+        <TextView
+            android:id="@+id/name_eka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="Erika Acena"
+            android:textColor="#060707"
+            android:textSize="7pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eka" />
+
+        <ImageView
+            android:id="@+id/nnel"
+            android:layout_width="110dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/nnel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_eka" />
+
+        <TextView
+            android:id="@+id/name_nnel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="Jonnel Esponilla"
+            android:textColor="#060707"
+            android:textSize="7pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nnel" />
+
+        <ImageView
+            android:id="@+id/ry"
+            android:layout_width="124dp"
+            android:layout_height="107dp"
+            android:src="@drawable/ryan"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_nnel" />
+        <TextView
+            android:id="@+id/name_ryan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="Ryan Joshua Jimenez"
+            android:textColor="#060707"
+            android:textSize="7pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ry" />
+
+        <ImageView
+            android:id="@+id/salon"
+            android:layout_width="112dp"
+            android:layout_height="118dp"
+            android:src="@drawable/salon"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_ryan" />
+
+        <TextView
+            android:id="@+id/name_salon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="Christian Salon"
+            android:textColor="#060707"
+            android:textSize="7pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

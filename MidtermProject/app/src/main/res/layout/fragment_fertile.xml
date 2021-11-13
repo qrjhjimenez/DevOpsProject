@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FertileFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fertileConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdc700">
+
+        <TextView
+            android:id="@+id/fertile"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="#FB5C2A"
+            android:fontFamily="serif"
+            android:text="       FERTILE EGG "
+            android:textColor="#0C0A0A"
+            android:textSize="15pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/details_fertile"
+            android:layout_width="360dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="20dp"
+            android:background="#fffbbd"
+            android:fontFamily="serif"
+            android:text="Fertile eggs are those that contain both ova and sperm, and will develop into a baby chick if incubated "
+            android:textColor="#0C0A0A"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fertile" />
+
+        <ImageView
+            android:id="@+id/one_fertile"
+            android:layout_width="310dp"
+            android:layout_height="189dp"
+            android:src="@drawable/fertile"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_fertile" />
+
+        <ImageView
+            android:id="@+id/two_fertile"
+            android:layout_width="276dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fertileone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/one_fertile" />
+
+        <Button
+            android:id="@+id/buttonfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="212dp"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/one_fertile" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
