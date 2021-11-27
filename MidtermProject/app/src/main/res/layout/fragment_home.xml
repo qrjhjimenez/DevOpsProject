@@ -10,7 +10,7 @@
         android:id="@+id/homeConstraints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fdc700">
+        android:background="#C0C0C0">
 
         <ImageView
             android:id="@+id/logo"
@@ -31,7 +31,7 @@
             android:text="   WELCOME "
             android:textColor="#0C0A0A"
             android:textSize="15pt"
-            android:background="#fffbbd"
+            android:background="@drawable/text_design"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,8 +59,10 @@
             android:layout_marginTop="25dp"
             android:fontFamily="serif"
             android:text="INFORMATIONS"
-            app:backgroundTint="#FB5C2A"
+            app:backgroundTint="#fdc700"
+            android:textColor="#0C0A0A"
             android:textSize="10pt"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/details" />
@@ -72,8 +74,10 @@
             android:layout_marginTop="25dp"
             android:fontFamily="serif"
             android:text="FERTILE EGGS"
-            app:backgroundTint="#FB5C2A"
+            app:backgroundTint="#fdc700"
+            android:textColor="#0C0A0A"
             android:textSize="10pt"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/info" />
@@ -85,8 +89,10 @@
             android:layout_marginTop="25dp"
             android:fontFamily="serif"
             android:text="INFERTILE EGGS"
-            app:backgroundTint="#FB5C2A"
             android:textSize="10pt"
+            app:backgroundTint="#fdc700"
+            android:textColor="#0C0A0A"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fertile" />

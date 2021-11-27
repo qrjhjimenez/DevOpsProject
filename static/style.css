@@ -1,0 +1,23 @@
+.btn-create {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.success:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.login {
+  background: #2196F3;
+  color: #000000;
+  border: 2px solid #2196F3;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

@@ -10,14 +10,14 @@
         android:id="@+id/statisticsConstraints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fdc700">
+        android:background="#C0C0C0">
 
         <TextView
             android:id="@+id/stat"
             android:layout_width="290dp"
             android:layout_height="88dp"
             android:layout_marginTop="100dp"
-            android:background="#FB5C2A"
+            android:background="@drawable/text_design"
             android:fontFamily="serif"
             android:text="INFORMATIONS"
             android:gravity="center_vertical"
@@ -35,7 +35,7 @@
             android:layout_marginTop="40dp"
             android:fontFamily="serif"
             android:text="1. According to PSA, The production of chicken meat from 2020 has decreased 7.8 percent from the total production of 2019. From April to June of 2021, the total production was lower by 1.6 percent than the previous year of the same quarter. "
-            android:background="#fffbbd"
+            android:background="@drawable/text_design"
             android:textColor="#0C0A0A"
             android:textSize="8pt"
             android:textStyle="bold"
@@ -50,7 +50,7 @@
             android:layout_marginTop="40dp"
             android:fontFamily="serif"
             android:text="2. Candling lamp is being used to check the appearance of the egg's embryo. The fertile egg will be used to produce another batch of chickens while the infertile egg will be sold on the market depending on its status. "
-            android:background="#fffbbd"
+            android:background="@drawable/text_design"
             android:textColor="#0C0A0A"
             android:textSize="8pt"
             android:textStyle="bold"
@@ -64,6 +64,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="212dp"
             android:text="Back"
+            app:backgroundTint="#fdc700"
+            android:textColor="#0C0A0A"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.049"
             app:layout_constraintStart_toStartOf="parent"

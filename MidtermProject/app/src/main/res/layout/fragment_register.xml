@@ -10,7 +10,7 @@
         android:id="@+id/registerConstraints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fdc700">
+        android:background="#C0C0C0">
 
         <ImageView
             android:id="@+id/logo"
@@ -31,53 +31,61 @@
             android:text="   SIGN UP! "
             android:textColor="#0C0A0A"
             android:textSize="15pt"
-            android:background="#fffbbd"
+            android:background="#fdc700"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/logo_user"
-            android:layout_width="57dp"
-            android:layout_height="63dp"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
             android:layout_marginStart="40dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/text_design"
             android:src="@drawable/name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/signup" />
+
         <EditText
             android:id="@+id/username"
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
-            android:background="#fffbbd"
+            android:background="@drawable/text_design"
+            android:textStyle="bold"
             android:fontFamily="serif"
             android:hint="   Username"
             android:inputType="textPersonName"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/signup" />
+
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="57dp"
-            android:layout_height="63dp"
+            android:layout_width="53dp"
+            android:layout_height="47dp"
             android:layout_marginStart="40dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="52dp"
             android:src="@drawable/pass"
+            android:background="@drawable/text_design"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logo_user" />
+
         <EditText
             android:id="@+id/password"
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
-            android:background="#fffbbd"
+            android:background="@drawable/text_design"
             android:fontFamily="serif"
             android:hint="   Password"
+            android:textStyle="bold"
             android:inputType="textPersonName"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,9 +98,12 @@
             android:layout_marginTop="30dp"
             android:fontFamily="serif"
             android:text="CREATE"
-            app:backgroundTint="#FB5C2A"
+            android:textColor="#0C0B0B"
+            app:backgroundTint="#fdc700"
             app:cornerRadius="10dp"
             app:icon="@drawable/iconcreate"
+            app:iconTint="#0C0B0B"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password" />
@@ -106,6 +117,7 @@
             android:text="Thank You for Signing Up!"
             android:textColor="#060707"
             android:textSize="7pt"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/create_button" />

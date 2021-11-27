@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Register | Midterm Devops</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-amber w3-center" style="padding:50px 5px">
+  <h1 class="w3-margin w3-jumbo">Design of an Automated Fertility Detection System for Chicken Eggs Using Machine Learning.</h1>
+</header>
+
+{% block content %}
+&nbsp;
+<div class="container">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    {% block page_content %}{% endblock %}
+</div>
+{% endblock %}
+
+<div class="center">
+  <form id="submit_form" method=POST>
+      <div class="row" style="margin-left:650px;">
+        <div class="col-lg-6" style="margin-top:18px; margin-bottom:18px; margin-left:30px;"><h1> Register: </h1></div>
+          <div class="col-lg-6" style="margin-top:18px; margin-bottom:18px; margin-left:30px;">
+              <div><input type="text" placeholder="First Name" name="firstname" required="required" style="font-size: 18pt; height: 50px; width:500px;"><div class="input_border"></div></div>
+          </div>
+          <div class="col-lg-6" style="margin-top:18px; margin-bottom:18px; margin-left:30px;">
+            <div><input type="text" placeholder="Last Name" name="lastname" required="required" style="font-size: 18pt; height: 50px; width:500px;"><div class="input_border"></div></div>
+          </div>
+          <div class="col-lg-6" style="margin-top:18px; margin-bottom:18px; margin-left:30px;">
+            <div><input type="text" placeholder="Username" name="username" required="required" style="font-size: 18pt; height: 50px; width:500px;"><div class="input_border"></div></div>
+          </div>
+          <div class="col-lg-6" style="margin-top:18px; margin-bottom:18px; margin-left:30px;">
+            <div><input type="password" placeholder="Password" name="userpass" required="required" style="font-size: 18pt; height: 50px; width:500px;"><div class="input_border"></div></div>
+          </div>
+          <div class="col-lg-6" style="margin-top:18px; margin-bottom:18px; margin-left:30px;">
+            <div><input type="password" placeholder="Confirm Password" name="confirmpass" required="required" style="font-size: 18pt; height: 50px; width:500px;"><div class="input_border"></div></div>
+          </div>
+          <div class="col-lg-6" style="margin-bottom:18px; margin-left:30px;">
+              <div><input type=submit name="register_acct" value="JOIN NOW" class="login" style="font-size: 18pt; height: 50px; width:500px;"><div class="input_border"></div></div>
+          </div>
+      </div>
+      </form>
+      </div>
+  
+  </body>
+  </html>
+  

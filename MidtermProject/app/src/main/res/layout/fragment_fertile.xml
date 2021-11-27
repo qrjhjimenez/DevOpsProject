@@ -10,14 +10,14 @@
         android:id="@+id/fertileConstraints"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fdc700">
+        android:background="#C0C0C0">
 
         <TextView
             android:id="@+id/fertile"
             android:layout_width="365dp"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
-            android:background="#FB5C2A"
+            android:background="@drawable/text_design"
             android:fontFamily="serif"
             android:text="       FERTILE EGG "
             android:textColor="#0C0A0A"
@@ -32,7 +32,7 @@
             android:layout_width="360dp"
             android:layout_height="93dp"
             android:layout_marginTop="20dp"
-            android:background="#fffbbd"
+            android:background="@drawable/text_design"
             android:fontFamily="serif"
             android:text="Fertile eggs are those that contain both ova and sperm, and will develop into a baby chick if incubated "
             android:textColor="#0C0A0A"
@@ -68,6 +68,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="212dp"
             android:text="Back"
+            app:backgroundTint="#fdc700"
+            android:textColor="#0C0A0A"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.21"
             app:layout_constraintStart_toStartOf="parent"
